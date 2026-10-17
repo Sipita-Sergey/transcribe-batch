@@ -225,9 +225,23 @@ Deepgram (и Groq для `--groq`) — облачные сервисы, файл
 На быстрых перебиваниях граница между репликами может съехать на слово: это особенность
 разделения одного смешанного канала, а не поломка.
 
-## Поддержка
+## 🤝 Автор и поддержка
 
-Проблемы, вопросы — заводи issue в этом репозитории, либо пиши
-[@SipitaSergey](https://t.me/SipitaSergey) в Telegram.
+Сделал **Сергей Сипита** — внедряю ИИ в маркетинг и собираю AI-офисы: команды цифровых
+сотрудников, которые ведут дела за предпринимателя. Расшифровщик — из моего рабочего офиса, пользуюсь им
+каждый день.
 
-Разбираю ИИ в работе и собираю нейроофисы — [@sipita08](https://t.me/sipita08).
+- 🌐 Сайт — https://sipita.ru/
+- 📣 Telegram-канал — https://t.me/sipita08 — новые скиллы, разборы, вопросы
+- 🤖 Бот со скиллами — https://t.me/sipita_sergey_bot — забрать скиллы и материалы
+- ВКонтакте — https://vk.ru/sipita08
+- MAX — https://max.ru/join/ckqMy6PLqC7lMcFUblNhWghGbWQEWMobrDAj0thJUFk
+- TenChat — https://tenchat.ru/SipitaSergey
+- YouTube — https://www.youtube.com/@SipitaSergey
+- 🐞 Нашли ошибку или есть идея — [Issues](https://github.com/Sipita-Sergey/transcribe-batch/issues)
+
+Если пригодилось — поставь ⭐, так его найдут другие.
+
+## Лицензия
+
+MIT.
