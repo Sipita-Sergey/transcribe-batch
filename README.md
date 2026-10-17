@@ -17,7 +17,7 @@ Google Drive и прямая ссылка на файл. Скачивать се
 
 Не открывай эту страницу руками — отправь **вот эту ссылку**:
 
-> https://raw.githubusercontent.com/leonovs0808-star/transcribe-batch/master/INSTALL-FOR-AI.md
+> https://raw.githubusercontent.com/Sipita-Sergey/transcribe-batch/master/INSTALL-FOR-AI.md
 
 в чат с Claude, ChatGPT или Codex **на том же компьютере**, где будешь ставить скрипт
 (нужен доступ к терминалу — на телефоне это не сработает), и напиши:
@@ -34,19 +34,19 @@ Google Drive и прямая ссылка на файл. Скачивать се
 
 **Claude Code** (macOS / Linux):
 ```bash
-git clone https://github.com/leonovs0808-star/transcribe-batch.git ~/.claude/skills/transcribe-batch
+git clone https://github.com/Sipita-Sergey/transcribe-batch.git ~/.claude/skills/transcribe-batch
 ```
 
 **Codex** (macOS / Linux):
 ```bash
-git clone https://github.com/leonovs0808-star/transcribe-batch.git ~/.codex/skills/transcribe-batch
+git clone https://github.com/Sipita-Sergey/transcribe-batch.git ~/.codex/skills/transcribe-batch
 ```
 
 **Windows (PowerShell)** — то же самое, только путь пишется так:
 ```powershell
-git clone https://github.com/leonovs0808-star/transcribe-batch.git $env:USERPROFILE\.claude\skills\transcribe-batch
+git clone https://github.com/Sipita-Sergey/transcribe-batch.git $env:USERPROFILE\.claude\skills\transcribe-batch
 # или для Codex:
-git clone https://github.com/leonovs0808-star/transcribe-batch.git $env:USERPROFILE\.codex\skills\transcribe-batch
+git clone https://github.com/Sipita-Sergey/transcribe-batch.git $env:USERPROFILE\.codex\skills\transcribe-batch
 ```
 
 Дальше зайди в эту папку, создай `.env` и впиши ключ (см. «Ключ» ниже). После этого в
