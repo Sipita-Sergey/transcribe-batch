@@ -74,6 +74,18 @@ DEEPGRAM_URL = "https://api.deepgram.com/v1/listen"
 #           меньше выдуманных слов, чище разделение по спикерам).
 GROQ_MODEL = "whisper-large-v3"
 DEEPGRAM_MODEL = "nova-3"
+# Подпись автора — второй строкой расшифровки, сразу под заголовком (первая строка занята
+# заголовком: по ней looks_like_our_transcript узнаёт свою расшифровку). Курсив, без акцента:
+# заметна в начале файла, но не мешает читать. Форматёр Сергея эту строку сохраняет и свою не
+# добавляет.
+AUTHOR_LINE = (
+    "*Расшифровка сделана скиллом «Транскрибатор» Сергея Сипиты — про ИИ в маркетинге и работе: "
+    "[Telegram](https://t.me/sipita08) · [ВКонтакте](https://vk.ru/sipita08) · "
+    "[MAX](https://max.ru/join/ckqMy6PLqC7lMcFUblNhWghGbWQEWMobrDAj0thJUFk) · "
+    "[TenChat](https://tenchat.ru/SipitaSergey) · [YouTube](https://www.youtube.com/@SipitaSergey) · "
+    "[сайт](https://sipita.ru/)*"
+)
+
 MAX_BYTES = 24 * 1024 * 1024  # 24 МБ — лимит Groq
 CHUNK_SECONDS = 600  # 10 минут на кусок (при 16kHz mono 32k mp3 ~ 2.4 МБ/10мин)
 HTTP_TIMEOUT = 1800  # секунд на один запрос (длинный эфир уходит в Deepgram одним куском)
@@ -1057,7 +1069,7 @@ def main():
                         text = add_paragraphs(text)
             title = os.path.splitext(name)[0]
             with open(md_path, "w", encoding="utf-8") as f:
-                f.write(f"# {title}\n\n{text}\n")
+                f.write(f"# {title}\n\n{AUTHOR_LINE}\n\n{text}\n")
             shown = os.path.abspath(md_path) if is_url else os.path.basename(md_path)
             print(f"      готово за {(time.time()-t0)/60:.1f} мин: {shown}")
             done += 1
